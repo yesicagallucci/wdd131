@@ -50,6 +50,26 @@
 margin: 0;
 padding: 0;
 background-color: var(--color-1);
+color: var(--color-2);
+
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 1rem;
+ 
+}
+
+header {
+background-color: var(--color-3);
+margin: 0;
+padding: 0;
+
+}
+
+main {
+  margin: 3rem;
+  padding: 1rem;
 }
 
 
