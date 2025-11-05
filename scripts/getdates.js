@@ -1,4 +1,12 @@
-let lastModified = document.lastModified;
-document.getElementById("lastModified").innerHTML = "Last modification: " + lastModified;
+const copyrightyear = document.getElementById("currentyear");
+const today = new Date();
 
-document.getElementById("currentyear").innerHTML = new Date().getFullYear();
+//set copyright sate in the footer:
+copyrightyear.innerHTML = today.getFullYear(); 
+
+//shorthand version of the same code: 
+//const today = new Date().getFullYear();
+//document.querySelector("#currentyear").innerHTML = today.getFullYear();
+
+//Set last modified information:
+document.getElementById("lastmodified").innerHTML = `Last Modification: ${document.lastModified}`;
