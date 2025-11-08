@@ -1,0 +1,149 @@
+
+:root {
+  --color-1: #141A8C;
+  --color-2: #50E2F2;
+  --color-3: #1DF216;
+  --color-4: #B016F2;
+  --heading-font: "The Girl Next Door", cursive;
+  --main-font: "Google Sans Code", monospace; 
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 1rem;
+  background-color: var(--color-1);
+  color: var(--color-2); 
+}
+
+header {
+background-color: var(--color-4);
+margin: 0;
+padding: 0;
+
+}
+
+header h1 {
+    position: relative;
+    padding: 1.5rem; 
+    height:  3rem;
+    font-family: var(--heading-font);
+    color:var(--color-3);
+    text-shadow: var(--color-3) 2px 0 10px;
+    margin-left: 2rem;
+    
+}
+
+#menu {
+	display: flex;
+    flex-direction: column;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	background-color: var(--color-4);
+	color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+
+#menu::before {
+	content: "≡";
+    color: var(--color-3);
+    text-shadow: var(--color-3) 2px 0 10px;
+
+}
+
+nav {
+	background-color: var(--color-4);
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: right;
+	text-decoration: none;
+	color: var(--color-3);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+	background-color: var(--color-2);
+  color: var(--color-1);
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+  color: var(--color-3);
+}
+
+main {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+
+}
+
+main h1 {
+    font-size: 1.5rem;
+    color: var(--color-2);
+    font-family: var(--main-font);
+    text-align: center;
+    padding: 1rem;
+}
+
+.gallery {
+  width: 52rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+footer {
+  margin:0;
+  background-color: var(--color-3);
+  height: 4rem;
+
+}
+
+.footer-content {
+ display: flex;
+ flex-direction: column;
+
+}
+
+.footer-content p {
+  color: var(--color-1);
+  font-size: .8rem;
+  text-align: center;
+  padding-top: .5rem;
+  
+}
