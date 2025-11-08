@@ -1,8 +1,40 @@
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 35rem) {
+  .gallery{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
+/* Bigger than Phones(laptop / desktop) */
+@media only screen and (min-width: 60rem) {
+  .gallery{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
 
+  header {
+    display: flex;
+    align-items: center;        /* vertically centers title + nav */
+    justify-content: space-between;
+    padding: 0 1rem;            /* optional spacing */
+  }
 
+  #menu {
+    display: none;
+  }
 
+   .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
 
+  .navigation li {
+    display: block;
+  }
+
+  .navigation a {
+    text-align: center;
+    padding: 0.75rem 1rem;
+  }
 
 }

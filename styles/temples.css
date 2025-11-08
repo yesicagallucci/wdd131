@@ -21,35 +21,37 @@ body {
 }
 
 header {
-background-color: var(--color-4);
+background-color: var(--color-1);
 margin: 0;
 padding: 0;
 
 }
+
 
 header h1 {
     position: relative;
     padding: 1.5rem; 
     height:  3rem;
     font-family: var(--heading-font);
+    font-size: 2rem;
     color:var(--color-3);
     text-shadow: var(--color-3) 2px 0 10px;
-    margin-left: 2rem;
-    
+    margin-left: 1rem;
+    text-align: left;
 }
 
 #menu {
 	display: flex;
-    flex-direction: column;
+  flex-direction: column;
 	font-size: 2rem;
 	font-weight: 700;
 	text-decoration: none;
 	padding: 0.5rem 0.75rem;
-	background-color: var(--color-4);
+	background-color: var(--color-1);
 	color: #000;
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
     
 }
 
@@ -61,9 +63,9 @@ header h1 {
 }
 
 nav {
-	background-color: var(--color-4);
+	background-color: var(--color-1);
 }
-.navigation {
+.navigation ul {
 	list-style: none;
 	margin: 0 auto;
 	max-width: 760px;
@@ -114,17 +116,15 @@ main h1 {
 }
 
 .gallery {
-  width: 52rem;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 5px;
+  margin: 1rem;
 }
 
 .gallery img {
   width: 100%;
-  display: block;
-  object-fit: cover;
+
 }
 
 footer {
