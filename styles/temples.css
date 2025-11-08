@@ -40,9 +40,13 @@ header h1 {
     text-align: left;
 }
 
-#menu {
-	display: flex;
+nav ul {
+  display: flex;
   flex-direction: column;
+
+}
+
+#menu {
 	font-size: 2rem;
 	font-weight: 700;
 	text-decoration: none;
