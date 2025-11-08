@@ -40,19 +40,15 @@ header h1 {
     text-align: left;
 }
 
-.navigation ul {
-  display: flex;
-  flex-direction: column;
-
-}
 
 #menu {
+  display: flex;
+  flex-direction: column;
 	font-size: 2rem;
 	font-weight: 700;
 	text-decoration: none;
 	padding: 0.5rem 0.75rem;
 	background-color: var(--color-1);
-	color: #000;
   position: absolute;
   top: 0;
   right: 0;
