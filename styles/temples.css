@@ -40,7 +40,7 @@ header h1 {
     text-align: left;
 }
 
-nav ul {
+.navigation ul {
   display: flex;
   flex-direction: column;
 

@@ -13,16 +13,16 @@
 
   header {
     display: flex;
-    align-items: center;        /* vertically centers title + nav */
+    align-items: center;        
     justify-content: space-between;
-    padding: 0 1rem;            /* optional spacing */
+    padding: 0 1rem;            
   }
 
   #menu {
     display: none;
   }
 
-   nav ul {
+   .navigation ul {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
