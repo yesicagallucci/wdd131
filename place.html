@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovely Place to visit</title>
+    <meta name="description" content="a selection of pictures of some of the temples of The Church of Jesuschrist of Latter-Day Saints">
+    <meta name="author" content="Yesica Gallucci">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+    <script src="scripts/foz-weather.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Foz de Iguazu</h1>
+        <h2>Iguazu Falls</h2>       
+    </header>
+    <main>
+        <div class="hero">
+             <picture>
+                <source srcset="images/hero-large-falls.webp" media="(min-width: 800px)">
+                <img src="images/hero-small-falls.webp" alt="Falls and a rainbow" width="500" height="861">            
+            </picture>
+        </div>
+        <section class="data">
+            <h3>Data</h3>
+             <ul>
+                <li><span>Area:</span> 258.9 km²</li>
+                <li><span>Population:</span> 260,000 (metro city population)</li>
+                <li><span>Official Language:</span> Portuguese</li>
+                <li><span>Currency:</span> Brazilian Real (BRL)</li>
+                <li><span>Timezone:</span> UTC -3 (Brasília Time)</li>
+                <li><span>Calling Code:</span> +55 (Brazil)</li>
+                <li><span>Internet TLD:</span> .br</li>
+             </ul>
+
+        </section>
+        <section class="weather">
+            <div class="weather-header">
+                <h3>Weather</h3>
+                <img src="images/weather-clouds-sun-sunny-icon.svg" alt="cloudy sun icon" width="50px">
+
+            </div>
+            <ul>
+                <li><span>Temperature: </span><span id="tempValue">15</span> °C</li>
+                <li><span>Wind Speed: </span><span id="windValue">10</span> km/h</li>
+                <li><span>Wind Chill: </span><span id="windChillValue"></span></li>
+            </ul>
+            
+        </section>
+    </main>
+    <footer>
+         <div class="footer-content">
+            <p>&copy;<span id="currentyear"></span> 👩‍💻 Yesica Gallucci 💖 Caacupe, Paraguay</p>
+            <p id="lastmodified"></p>
+        </div>
+    </footer>
+</body>

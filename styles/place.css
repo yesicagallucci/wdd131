@@ -1,0 +1,116 @@
+:root {
+    --color-1: #593022;
+    --color-2: #bfdc2e;
+    --heading-font: "The Girl Next Door", cursive;
+    --main-font: "Google Sans Code", monospace; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--color-2);
+    color: var(--color-1);
+    font-family: var(--heading-font);
+    text-align: center;
+    font-size: 1.7rem;
+    height: 100%;
+      
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+ 
+}
+section {
+   margin: 0 auto;
+   font-family: var(--main-font);
+   font-size: 1rem;
+   color: var(--color-1);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 2rem;
+
+}
+
+section span {
+    font-weight: bold;
+}
+
+section ul {
+    list-style: none;
+    padding-left: 0;   
+}
+
+.weather-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h3 {
+    font-family: var(--main-font);
+    color: var(--color-1);
+    font-weight: 700;
+}
+
+footer {
+  margin:0;
+  background-color: var(--color-2);
+  height: 4rem;
+
+}
+
+.footer-content {
+ display: flex;
+ flex-direction: column;
+
+}
+
+.footer-content p {
+  color: var(--color-1);
+  font-size: .8rem;
+  text-align: center;
+  padding-top: .5rem;
+  margin: 0;
+}
+
+@media only screen and (min-width: 45rem) {
+    .header{
+        text-align: center;
+       
+    }
+    .data {
+        position: absolute;
+        top: 8rem;
+        left: 4rem;
+        background-color: rgba(255, 255, 255, 0.75);
+        padding: .5rem; 
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 1rem;
+        right: 4rem;
+        background-color: rgba(255, 255, 255, 0.75);
+        padding: .5rem; 
+    }
+
+    .weather-header {
+        flex-direction: row;
+    }
+
+    
+
+
+}
