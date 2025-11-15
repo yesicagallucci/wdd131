@@ -51,10 +51,21 @@ section ul {
     padding-left: 0;   
 }
 
-.weather-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.weather h3 {
+  position: relative; 
+  padding-right: 2rem;    
+}
+
+.weather h3::after {
+  content: "";
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-image: url("../images/clouds-sun-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  
 }
 
 
@@ -92,7 +103,7 @@ footer {
     }
     .data {
         position: absolute;
-        top: 8rem;
+        top: 12rem;
         left: 4rem;
         background-color: rgba(255, 255, 255, 0.75);
         padding: .5rem; 
@@ -106,10 +117,13 @@ footer {
         padding: .5rem; 
     }
 
-    .weather-header {
-        flex-direction: row;
+    header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;  
     }
 
+   
     
 
 
