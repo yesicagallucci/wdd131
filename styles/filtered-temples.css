@@ -41,9 +41,7 @@ h1 {
 
 
 #menu {
-  display: flex;
-  flex-direction: column;
-	font-size: 2rem;
+  font-size: 2rem;
 	font-weight: 700;
 	text-decoration: none;
 	padding: 0.5rem 0.75rem;
@@ -52,6 +50,11 @@ h1 {
   top: 0;
   right: 0;
     
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
 }
 
 #menu::before {
