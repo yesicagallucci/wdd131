@@ -1,0 +1,180 @@
+:root {
+  --color-1: #141A8C;
+  --color-2: #50E2F2;
+  --color-3: #1DF216;
+  --color-4: #B016F2;
+  --heading-font: "The Girl Next Door", cursive;
+  --main-font: "Google Sans Code", monospace; 
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 1rem;
+  background-color: var(--color-1);
+  color: var(--color-2); 
+}
+
+header {
+background-color: var(--color-1);
+margin: 0;
+padding: 0;
+
+}
+
+
+h1 {
+    position: relative;
+    padding: 1.5rem; 
+    height:  3rem;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    color:var(--color-3);
+    text-shadow: var(--color-3) 2px 0 10px;
+    margin-left: 1rem;
+    text-align: left;
+}
+
+
+#menu {
+  display: flex;
+  flex-direction: column;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	background-color: var(--color-1);
+  position: absolute;
+  top: 0;
+  right: 0;
+    
+}
+
+#menu::before {
+	content: "≡";
+    color: var(--color-3);
+    text-shadow: var(--color-3) 2px 0 10px;
+
+}
+
+nav {
+	background-color: var(--color-1);
+}
+.navigation ul {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: right;
+	text-decoration: none;
+	color: var(--color-3);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+	background-color: var(--color-2);
+  color: var(--color-1);
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+  color: var(--color-3);
+}
+
+main {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--color-2);
+    font-family: var(--main-font);
+    text-align: center;
+    padding: 1rem;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 5px;
+  margin: 1rem;
+}
+
+
+.temple-card {
+  display: grid;
+  grid-template-rows: auto auto auto auto 1fr auto;
+  align-items: start;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 3px solid var(--color-3);
+}
+
+.temple-card h3 {
+  font-family: var(--heading-font);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-3);  
+  text-align: center; 
+}
+
+.temple-card p {
+    font-size: .6rem;
+    padding: .5rem;
+    text-align: left;
+    line-height: .8rem;
+
+}
+
+
+.temple-card img {
+  width: 100%;          /* fill the card width */
+  height: 200px;        /* fixed height for consistency */
+  object-fit: cover;    /* crop/scale nicely without distortion */
+  border-radius: 6px;
+  margin-top: 10px;
+  grid-row: 6;
+}
+
+footer {
+  margin:0;
+  background-color: var(--color-3);
+  height: 4rem;
+
+}
+
+.footer-content {
+ display: flex;
+ flex-direction: column;
+
+}
+
+.footer-content p {
+  color: var(--color-1);
+  font-size: .8rem;
+  text-align: center;
+  padding-top: .5rem;
+  
+}

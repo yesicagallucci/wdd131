@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid black;
+}
+
+caption {
+    caption-side: bottom;
+    font-size: .7rem;
+    padding-top: .5rem;
+}
+
+td { 
+    text-align: center;
+}
+
+th {
+    padding: .5rem;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+thead {
+    color: white;
+    background-color: black;
+}
+
