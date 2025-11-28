@@ -1,0 +1,118 @@
+/*
+.oregano-regular {
+  font-family: "Oregano", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oregano-regular-italic {
+  font-family: "Oregano", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.domine-<uniquifier> {
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/
+
+:root {
+    --colorbase: #fff5e1;
+    --colordark: #365912;
+    --coloraccent: #9ABF15;
+    --coloraccent2: #85A60F;
+    --fontdeco:  "Oregano", cursive;
+    --fontbody: "Domine", serif;
+}
+
+body {
+  font-family: var(--fontbody);
+  font-size: .8rem;
+  background-color:var(--coloraccent2) ;
+
+}
+
+main {
+ background-color: #fff;
+ width: 40rem;
+ margin: 0 auto;
+ padding: 2rem;
+ border-radius: 12px;
+}
+
+h1 {
+  color: var(--colordark);
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 
+    -1px -1px 0 var(--colorbase),  /* top-left */
+     1px -1px 0 var(--colorbase),  /* top-right */
+    -1px  1px 0 var(--colorbase),  /* bottom-left */
+     1px  1px 0 var(--colorbase);  /* bottom-right */
+
+}
+
+h1, h2 {
+  font-family: var(--fontdeco);
+  
+}
+
+
+h2{
+  color: var(--coloraccent2);
+  font-size: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5rem;
+  padding: 1rem;
+}
+
+.p {
+  grid-column: 1/2;
+  text-align: right;
+}
+
+.swatch {
+  grid-column: 2/3;
+  width: 60px;
+  height: 30px;
+  margin: 0 10px;
+  border-radius: 6px;
+}
+
+.base { 
+  background-color:var(--colorbase); 
+  border: solid 1px var(--colordark);
+  
+}  
+.dark { background-color:var(--colordark); }  
+.accent-one  { background-color:var(--coloraccent); }   
+.accent-two  { background-color:var(--coloraccent2); } 
+
+
+
+img {
+  width: 50%;
+}
+
+
+.footer-content {
+ display: flex;
+ flex-direction: column;
+
+}
+
+.footer-content p {
+  font-size: .8rem;
+  text-align: center;  
+  color: #fff;
+  
+}
+
