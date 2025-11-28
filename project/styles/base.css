@@ -1,0 +1,65 @@
+:root {
+    --colorbase: #fff5e1; /*base plaid*/
+    --colordark: #365912;
+    --coloraccent: #9ABF15;/*plaid #3*/
+    --coloraccent2: #85A60F; /*plaid #4*/
+    --backgcolor1:#E6F285; /*plaid #2*/
+    --colordark: #365912;
+    --fontdeco:  "Oregano", cursive;
+    --fontbody: "Domine", serif;
+}
+
+body {
+    background-color: var(--colorbase);
+   background:
+    repeating-linear-gradient(
+      to right,
+      #E6F285 0px,   #E6F285 20px,   /* bright stripe */
+      #FFF5E1 20px,  #FFF5E1 40px,   /* cream spacer */
+      #9ABF15 40px,  #9ABF15 60px,   /* olive stripe */
+      #FFF5E1 60px,  #FFF5E1 80px,   /* cream spacer */
+      #85A60F 80px,  #85A60F 90px,   /* dark pinstripe */
+      #FFF5E1 90px,  #FFF5E1 120px   /* repeat unit ends */
+    );
+    background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(230,242,133,0.7) 0px,   rgba(230,242,133,0.7) 20px,
+      rgba(255,245,225,0.7) 20px,  rgba(255,245,225,0.7) 40px,
+      rgba(154,191,21,0.7) 40px,   rgba(154,191,21,0.7) 60px,
+      rgba(255,245,225,0.7) 60px,  rgba(255,245,225,0.7) 80px,
+      rgba(133,166,15,0.7) 80px,   rgba(133,166,15,0.7) 90px,
+      rgba(255,245,225,0.7) 90px,  rgba(255,245,225,0.7) 120px
+    ),
+    repeating-linear-gradient(
+      to right,
+      #E6F285 0px,   #E6F285 20px,
+      #FFF5E1 20px,  #FFF5E1 40px,
+      #9ABF15 40px,  #9ABF15 60px,
+      #FFF5E1 60px,  #FFF5E1 80px,
+      #85A60F 80px,  #85A60F 90px,
+      #FFF5E1 90px,  #FFF5E1 120px
+    );
+  background-size: 120px 120px, 120px 120px;
+   
+   
+}
+
+.title {
+    font-family: var(--fontdeco);
+    font-size: clamp(2rem, 5vw, 5rem); /*sclaes with viewport*/
+    color: var(--colordark);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 600px;
+    aspect-ratio: 2/1;
+    height: 300px;
+    margin: 0 auto;
+    background-image: url('../images/label-header.svg');
+    background-repeat: no-repeat;
+    background-size: contain;              /* scale to fit */
+    background-position: center;
+}

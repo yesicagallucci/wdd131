@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Form to review products">
+    <meta name="author" content="Yesica Gallucci">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/product-form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="form">
+             
+            <label>Product Name
+                <select name="product" id="dropdown" required></select>
+            </label>
+            <div id="rating">Overall Rating</div>
+            <label><input type="radio" name="star" value="1-star" id="star" required>&star;</label>
+            <label><input type="radio" name="star" value="2-stars" id="star" required>&star;&star;</label>
+            <label><input type="radio" name="star" value="3-stars" id="star" required>&star;&star;&star;</label>
+            <label><input type="radio" name="star" value="4-stars" id="star" required>&star;&star;&star;&star;</label>
+            <label><input type="radio" name="star" value="5-stars" id="star" required>&star;&star;&star;&star;&star;</label>            
+
+            <label>Date of Installation<input type="date" id="installdate" name="installation" required></label>
+            
+            <div>Which features did you find useful in the product?</div>
+            <p>(Choose all that apply)</p>
+            <label><input type="checkbox" name="durability" value="yes" id="features">Durability</label>
+            <label><input type="checkbox" name="use" value="yes" id="features">Ease of Use</label>
+            <label><input type="checkbox" name="performance" value="yes" id="features">Performance</label>
+            <label><input type="checkbox" name="design" value="yes" id="features">Design</label>
+
+            <div>Written Review</div>
+            <textarea type="text" id="text" name="written">
+
+        </form>
+
+    </main>
+    <footer>
+         <div class="footer-content">
+            <p>&copy;<span id="currentyear"></span> 👩‍💻 Yesica Gallucci 💖 Caacupe, Paraguay</p>
+            <p id="lastmodified"></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
