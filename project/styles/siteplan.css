@@ -46,13 +46,13 @@ main {
 
 h1 {
   color: var(--colordark);
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   text-shadow: 
-    -1px -1px 0 var(--colorbase),  /* top-left */
-     1px -1px 0 var(--colorbase),  /* top-right */
-    -1px  1px 0 var(--colorbase),  /* bottom-left */
-     1px  1px 0 var(--colorbase);  /* bottom-right */
+    -2px -2px 0 var(--colorbase),  /* top-left */
+     2px -2px 0 var(--colorbase),  /* top-right */
+    -2px  2px 0 var(--colorbase),  /* bottom-left */
+     2px  2px 0 var(--colorbase);  /* bottom-right */
 
 }
 
@@ -63,7 +63,7 @@ h1, h2 {
 
 
 h2{
-  color: var(--coloraccent2);
+  color: var(--colordark);
   font-size: 2rem;
 }
 
@@ -102,6 +102,11 @@ img {
   width: 50%;
 }
 
+footer {
+  background-color: #fff;
+  margin-top: 2rem;
+ 
+}
 
 .footer-content {
  display: flex;
@@ -112,7 +117,7 @@ img {
 .footer-content p {
   font-size: .8rem;
   text-align: center;  
-  color: #fff;
+  color: var(--colordark);
   
 }
 
