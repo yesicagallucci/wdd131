@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
-    <meta name="description" content="Form to review products">
+    <meta name="description" content="Practice form to review products with stars selection">
     <meta name="author" content="Yesica Gallucci">
     <link rel="stylesheet" href="styles/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,27 +20,47 @@
     <main>
         <form method="get" action="review.html" class="form">
              
-            <label>Product Name
-                <select name="product" id="dropdown" required></select>
-            </label>
-            <div id="rating">Overall Rating</div>
-            <label><input type="radio" name="star" value="1-star" id="star" required>&star;</label>
-            <label><input type="radio" name="star" value="2-stars" id="star" required>&star;&star;</label>
-            <label><input type="radio" name="star" value="3-stars" id="star" required>&star;&star;&star;</label>
-            <label><input type="radio" name="star" value="4-stars" id="star" required>&star;&star;&star;&star;</label>
-            <label><input type="radio" name="star" value="5-stars" id="star" required>&star;&star;&star;&star;&star;</label>            
-
-            <label>Date of Installation<input type="date" id="installdate" name="installation" required></label>
+            <div class="product">
+                <div>Product Name</div>
+                <label>
+                    <select name="product" id="dropdown" required></select>
+                </label>
+            </div>
             
-            <div>Which features did you find useful in the product?</div>
-            <p>(Choose all that apply)</p>
-            <label><input type="checkbox" name="durability" value="yes" id="features">Durability</label>
-            <label><input type="checkbox" name="use" value="yes" id="features">Ease of Use</label>
-            <label><input type="checkbox" name="performance" value="yes" id="features">Performance</label>
-            <label><input type="checkbox" name="design" value="yes" id="features">Design</label>
+            <div id="rating">Overall Rating</div>
+            <div class="radio">
+                <label><input type="radio" name="star" value="1-star" id="star" required>&star;</label>
+                <label><input type="radio" name="star" value="2-stars" id="star" required>&star;&star;</label>
+                <label><input type="radio" name="star" value="3-stars" id="star" required>&star;&star;&star;</label>
+                <label><input type="radio" name="star" value="4-stars" id="star" required>&star;&star;&star;&star;</label>
+                <label><input type="radio" name="star" value="5-stars" id="star" required>&star;&star;&star;&star;&star;</label>            
+            </div>
+            
+            <div class="date">
+                <label>Date of Installation<input type="date" id="installdate" name="installation" required></label>
+            </div>
+                        
+            <div class="checkbox">
+                <div>Which features did you find useful in the product?</div>
+                <p>(Choose all that apply)</p>
+                <label><input type="checkbox" name="durability" value="yes" id="features">Durability</label>
+                <label><input type="checkbox" name="use" value="yes" id="features">Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="yes" id="features">Performance</label>
+                <label><input type="checkbox" name="design" value="yes" id="features">Design</label>
+            </div>
+           
+            <div class="textbox">
+                <div>Written Review (Optional)</div>
+                <label><textarea type="text" id="text" name="written"></textarea></label>
+            </div>
+            
+            <div class="name">
+                <div>Your Name (Optional)</div>
+                <label><input type="text" id="name" name="customer"></label>
+            </div>
+            
 
-            <div>Written Review</div>
-            <textarea type="text" id="text" name="written"></textarea>
+            <input type="submit" value="Post Review">
 
         </form>
 
