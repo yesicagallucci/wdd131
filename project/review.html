@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tastecloud - Home page</title>
+    <title>Review your entry</title>
     <meta name="description" content="cloud hub and collaborative site to save and check recipes uploaded from users">
     <meta name="author" content="Yesica Gallucci">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,23 +12,20 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/getdates.js" defer></script>
-    
+    <script src="scripts/browse.js" defer></script>
 </head>
 <body>
     <header>
-        <h1 class="title">Tastecloud</h1>
+        <h1 class="form-header scalloped"><a href="tastecloud.html">Tastecloud</a></h1>
     </header>
-    <main>
-        <div class="intro">
-            <p>TasteCloud is a collaborative recipe hub where food lovers can share, explore, and enjoy cooking together.</p>
-            <p>Our homepage offers quick access to recipes, community contributions, and site information, making it easy to discover new flavors and connect with others through food.</p>
+    <main class="review-page">
+        <section id="recipe-preview" class="recipe-card"></section>
+
+        <div class="review-actions">
+            <button id="publish" class="btn">Publish</button>
+            <button id="correct" class="btn">Go Back</button>
         </div>
-        <div class="home-buttons">
-            <a class="btn" href="form.html">Add Your Recipe</a>
-            <a class="btn" href="recipes.html">Browse Recipes</a>
-            <a class="btn" href="tips.html">Cooking Tips</a>
-        </div>
-        
+
     </main>
     <footer>
         <p>&copy;<span id="currentyear"></span> By Yesica Gallucci</p>

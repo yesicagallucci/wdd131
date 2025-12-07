@@ -9,6 +9,11 @@
     --fontbody: "Domine", serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
     background-color: var(--colorbase);
    background:
@@ -47,7 +52,7 @@ body {
 
 .title {
     font-family: var(--fontdeco);
-    font-size: clamp(2rem, 5vw, 5rem); /*sclaes with viewport*/
+    font-size: 4rem; 
     color: var(--colordark);
     text-align: center;
     display: flex;
@@ -62,4 +67,433 @@ body {
     background-repeat: no-repeat;
     background-size: contain;              /* scale to fit */
     background-position: center;
+}
+
+.intro {
+  font-family: var(--fontbody);
+  color: var(--colordark);
+  font-size: 1.2rem;
+  margin: 0 auto;
+  text-align: center;
+  margin: 2rem;
+  padding: 1rem;
+  line-height: 2rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 15px;
+ 
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+  width: 15rem;
+  padding-bottom: 2rem;
+}
+
+.btn {
+  padding: 1.5rem;
+  border-radius: 15px;
+  background-color: var(--backgcolor1);
+  border: 3px solid var(--coloraccent);
+  font-family: var(--fontdeco);
+  font-size: 1.5rem;
+  color: var(--colordark);
+  font-weight: 900;
+  box-shadow: 4px 4px 10px var(--colordark);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn:active {
+  transform: translateY(2px); /* moves button down */
+  box-shadow: 2px 2px 4px #365912; /* smaller shadow */
+}
+
+
+footer {
+  margin-top: 1rem;
+  width: 100%;
+  height: 6rem;
+  font-family: var(--fontbody);
+  background-color: var(--backgcolor1);
+  padding-top: 1rem;
+  text-align: center;
+  line-height: 1.5rem;
+  position: static;
+}
+
+footer a:hover {
+  color: var(--colordark);
+}
+
+/*Form Page*/
+
+.form-header {
+  font-family: var(--fontdeco);
+  font-size: 3rem; 
+  padding: 2rem;
+}
+
+
+
+.form-header a{
+  text-decoration: none;
+  color: var(--colordark);
+}
+
+.form-header a:hover {
+  color: var(--coloraccent2);
+}
+
+
+.scalloped {
+  background-color:var(--backgcolor1);
+  background-image: radial-gradient(circle at 10px -5px, var(--coloraccent2) 12px, transparent 13px);
+  background-size: 20px 20px;
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+.form-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-main h2 {
+  font-family: var(--fontdeco);
+  font-size: 2rem; 
+  color: var(--colordark);
+  text-align: center;
+  text-shadow: 
+    -2px -2px 0 var(--colorbase),  /* top-left */
+     2px -2px 0 var(--colorbase),  /* top-right */
+    -2px  2px 0 var(--colorbase),  /* bottom-left */
+     2px  2px 0 var(--colorbase);  /* bottom-right */
+}
+
+.form {
+  background-color: var(--colorbase);
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 600px;
+  
+}
+
+.form fieldset {
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  padding: .5rem 2%;
+  border: none;
+  
+}
+
+.form label {
+  display: block;
+  padding-top: 1rem;
+  color: var(--colordark);
+  font-family: var(--fontbody);
+  font-size: .9rem;
+}
+
+.form input[type="text"],
+.form input[type="url"],
+.form select
+{
+  background-color: #fff;
+  display: block;
+  border: solid 1px var(--coloraccent);
+  border-radius: 6px;
+  padding: .75rem;
+  width: 100%;
+  max-width: 400px;
+  
+}
+
+.form textarea {
+ background-color: #fff;
+ display: block;
+ border: solid 1px var(--coloraccent);
+ border-radius: 6px;
+ padding: .75rem;
+ width: 100%;
+ max-width: 400px;
+ height: 5rem;
+
+}
+
+.form input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.form input:required {
+  border-right: solid 6px darkred;  
+}
+
+.recipe textarea {
+  border: solid 3px darkred; ;
+}
+
+.form input:required:valid {
+  border-right: solid 6px var(--coloraccent2);  
+}
+
+.recipe textarea:valid {
+  border: solid 3px var(--coloraccent2); ;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form input[type="submit"] {
+  width: 96%;
+  max-width: 400px;
+  margin: -1rem 2% 2rem 2%;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: var(--backgcolor1);
+  border: 3px solid var(--coloraccent);
+  font-family: var(--fontdeco);
+  font-size: 1.5rem;
+  color: var(--colordark);
+  font-weight: 900;
+  box-shadow: 4px 4px 10px var(--colordark);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+.form input[type="submit"]:active {
+  transform: translateY(2px); /* moves button down */
+  box-shadow: 2px 2px 4px #365912; /* smaller shadow */
+}
+
+/*Recipes page*/
+
+/*Menu-filters*/
+
+#menu {
+  font-family: var(--fontdeco);
+  font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--colordark);
+  
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--backgcolor1);
+}
+
+#menu::before {
+	content: "≡";
+  color: var(--colordark);
+}
+
+.navigation ul {
+	list-style: none;
+	margin: 0 auto;
+	
+}
+
+.navigation li {
+	display: none;
+  position: relative;
+}
+.navigation a {
+  font-family: var(--fontdeco);
+  display: block;
+	padding: 0.75rem;
+	text-align: right;
+	text-decoration: none;
+	color: var(--colordark);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1.5rem, 2vmin, 2rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+	 color: var(--coloraccent2);
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+  color: var(--colordark);
+}
+
+/*recipe cards*/
+
+
+.display {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin: 1rem;
+}
+
+
+.recipe-card {
+  display: grid;
+  grid-template-rows: auto auto auto auto 1fr auto;
+  align-items: start;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 3px solid var(--coloraccent2);
+  background-color: var(--colorbase);
+  color: var(--colordark);
+
+}
+
+.recipe-card h2 {
+  font-family: var(--fontdeco);
+  font-size: 2rem;
+  
+}
+
+.recipe-card h3 {
+  font-family: var(--fontdeco);
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: var(--color-3);  
+  text-align: center; 
+
+}
+
+.recipe-card p {
+    font-size: 1rem;
+    padding: .5rem;
+    text-align: left;
+    line-height: 1rem;
+    font-family: var(--fontbody);
+
+}
+
+.recipe-filters {
+  margin: 1rem;
+  font-weight: 900;
+  word-spacing: .5rem;
+}
+
+.no-image {
+  width: 100%;          
+  height: 20px;       
+  object-fit: cover;   
+  border-radius: 6px;
+  margin-top: 10px;
+  grid-row: 6;
+  font-weight: 900;
+}
+
+.recipe-card img {
+  width: 100%;          /* fill the card width */
+  height: 200px;        /* fixed height for consistency */
+  object-fit: cover;    /* crop/scale nicely without distortion */
+  border-radius: 6px;
+  margin-top: 10px;
+  grid-row: 6;
+}
+
+.recipe-steps {
+  padding-left: 1rem;
+}
+
+/*Reference Page*/
+
+.reference-page h2 {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 2rem;
+  font-family: var(--fontdeco);
+  font-size: 3rem;
+  color: var(--colordark);
+  text-shadow: 
+    -2px -2px 0 var(--colorbase),  /* top-left */
+     2px -2px 0 var(--colorbase),  /* top-right */
+    -2px  2px 0 var(--colorbase),  /* bottom-left */
+     2px  2px 0 var(--colorbase);  /* bottom-right */
+
+}
+
+.reference-page div {
+  background-color: var(--colorbase);
+  margin: 0 auto;
+  max-width: fit-content;
+  padding: 3rem;
+  border-radius: 15px;
+  border: 5px solid var(--coloraccent2);
+
+}
+
+.reference-page h3 {
+  font-family: var(--fontdeco);
+  font-size: 2rem;
+  color: var(--colordark);
+  padding-bottom: 1rem;
+}
+
+
+
+/*Review page*/
+
+.review-page {
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.review-actions {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.review-actions button {
+  margin: 1rem;
+}
+
+/*tips*/
+
+.more {
+  background-color: var(--colorbase);
+  width: auto;
+  margin: 8rem auto;
+  text-align: center;
+  border-radius: 15px;
+  border: 5px solid var(--coloraccent2);
+  min-width: 300px;
+  max-width: 90%;
+  box-sizing: border-box;
+}
+
+.more h2 {
+  font-family: var(--fontdeco);
+  font-size: 2rem; 
+  color: var(--colordark);
+  text-align: left;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.more iframe {
+  width: 100%;          
+  max-width: 560px;     
+  aspect-ratio: 16 / 9; 
+  height: auto;         
+  display: block;
+  margin: 1rem auto;
 }

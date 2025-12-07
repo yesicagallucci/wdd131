@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add your recipe</title>
+    <meta name="description" content="cloud hub and collaborative site to save and check recipes uploaded from users">
+    <meta name="author" content="Yesica Gallucci">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Oregano:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/countries-list/dist/countries.min.js"></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="form-header scalloped"><a href="tastecloud.html">Tastecloud</a></h1>
+    </header>
+    <main class="form-main">
+        <h2>Fill out this form to add a recipe to the site</h2>
+        <form method="get" action="review.html" class="form">
+            <fieldset class="general-info">
+                <label>Your Name (optional)<input type="text" name="author" id="author"></label>
+                <label>Recipe Title <input type="text" name="title" id="title" required></label>
+                <label>Country (Optional)
+                    <select name="country" id="country-dropdown">
+                        <option value="">Select a Country</option>
+                    </select>
+                </label>
+                <label>Tell us why this recipe matters to you (Optional)<textarea name="story" id="story"></textarea></label>           
+            </fieldset>
+            <fieldset class="recipe">
+                <label>Ingredients with measures and units (ex: Flour 2 cups, g, spoon, etc)<textarea name="ingredients" id="ingredients" required></textarea></label>
+                <label>Instructions (write steps clearly, one per line) <textarea name="instructions" id="instructions" required></textarea></label>
+            </fieldset>
+            <label for="recipe-url">Image URL:</label>
+            <input type="url" id="recipe-url" name="recipe-url" placeholder="https://example.com/my-dish.jpg">
+            
+            <fieldset class="filters">
+                <label><input type="checkbox" name="appetizer" value="yes">Appetizer</label>
+                <label><input type="checkbox" name="dessert" value="yes">Dessert</label>
+                <label><input type="checkbox" name="glutenFree" value="yes">Gluten-Free</label>
+                <label><input type="checkbox" name="mainDish" value="yes">Main Dish</label>
+                <label><input type="checkbox" name="quick" value="yes">Quick</label>
+                <label><input type="checkbox" name="vegan" value="yes">Vegan</label>            
+            </fieldset>
+            
+            <input type="submit" value="Add My Recipe">
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> By Yesica Gallucci</p>
+        <p id="lastmodified"></p>
+        <a href="siteplan.html" target="_blank">Site plan</a> <a href="references.html" target="_blank">Reference Page</a>
+    </footer>
+</body>
+</html>

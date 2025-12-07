@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tastecloud - Final project for WDD131 - browser page</title>
+    <meta name="description" content="cloud hub and collaborative site to save and check recipes uploaded from users">
+    <meta name="author" content="Yesica Gallucci">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Oregano:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/browse.js" defer></script>
+</head>
+<body>
+     <header class="recipes-header">
+        <h1 class="form-header scalloped"><a href="tastecloud.html">Tastecloud</a></h1>
+        <a id="menu" href="#"></a>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#" id="app">Appetizer</a></li>
+                <li><a href="#" id="dessert">Dessert</a></li>
+                <li><a href="#" id="glutenFree">Gluten-Free</a></li>
+                <li><a href="#" id="mainDish">Main Dish</a></li>
+                <li><a href="#" id="quick">Quick</a></li>
+                <li><a href="#" id="vegan">Vegan</a></li>
+                <li><a href="#" id="clear">Clear Filters</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="display" id="recipe-cards"></div>        
+    </main>
+     <footer>
+        <p>&copy;<span id="currentyear"></span> By Yesica Gallucci</p>
+        <p id="lastmodified"></p>
+        <a href="siteplan.html" target="_blank">Site plan</a> <a href="references.html" target="_blank">Reference Page</a>
+    </footer>
+</body>
+</html>
