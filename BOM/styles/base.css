@@ -58,6 +58,16 @@ li {
 	justify-content: space-between;
 }
 
+span {
+	color: blue;
+	font-weight: 900;
+}
+
+footer span {
+	color: black;
+	font-weight: 400;
+}
+
 @media only screen and (min-width: 32.5em) {
 	h1 {
 		font-size: 2rem;
